@@ -1,0 +1,2 @@
+GeoIP2-City_20220610/GeoIP2-City.mmdb filter=lfs diff=lfs merge=lfs -text
+GeoIP2-Country_20220610/GeoIP2-Country.mmdb filter=lfs diff=lfs merge=lfs -text
