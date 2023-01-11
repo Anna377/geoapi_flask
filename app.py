@@ -1,12 +1,24 @@
-from flask import Flask, request
 import geoip2.database
+import os
 import re
+from flask import Flask, request
+import logging
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 
 app = Flask(__name__)
+limiter = Limiter(
+    key_func=get_remote_address,
+    app=app,
+    default_limits=["200 per day", "50 per hour"],
+    storage_uri="memory://",
+)
 
 
 @app.route('/')
+@limiter.exempt
 def getip():
+    logging.basicConfig(filename='error.log', level=logging.DEBUG)
 
     if (str(request.args.get('ip')) == "") or (request.args.get('ip') is None):
         result = request.environ['REMOTE_ADDR']
@@ -104,7 +116,6 @@ def getip():
                     "subdivisions_iso_code": ""
 
                 }
-
         return {
             "statusCode": "OK",
             "ipAddress": result,
