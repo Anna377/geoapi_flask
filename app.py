@@ -1,11 +1,9 @@
 import geoip2.database
 import os
 import re
-<<<<<<< HEAD
-=======
 from flask import Flask, request
 import logging
->>>>>>> 32c76188bd5d049a467cfe33676a6413983bee80
+
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 
