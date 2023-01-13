@@ -1,0 +1,13 @@
+INFO:werkzeug: * Detected change in '/mnt/c/Users/anna.martirosyan/Desktop/geoapi/app.py', reloading
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:33:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:33:12] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:33:12] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:33:12] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:33:12] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/mnt/c/Users/anna.martirosyan/Desktop/geoapi/app.py', reloading
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:34:42] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:34:42] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:34:42] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:34:42] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:38:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.29.240.1 - - [12/Jan/2023 14:38:08] "GET /?ip=195.88.86.16 HTTP/1.1" 200 -
